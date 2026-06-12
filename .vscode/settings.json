@@ -1,0 +1,7 @@
+{
+  "prettier.prettierPath": "./node_modules/prettier",
+  "editor.formatOnSave": true,
+  "prettier.semi": false,
+  "js/ts.format.insertSpaceAfterSemicolonInForStatements": false,
+  "css.completion.completePropertyWithSemicolon": true
+}
