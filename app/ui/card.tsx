@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function Card() {
   return (
@@ -14,6 +15,32 @@ export function Card() {
         technologies and frameworks like React and NextJS. I thrive on creating
         user-centric designs and optimising performance for seamless browsing
         experiences.
+        <nav
+          className="flex gap-10 mt-4 w-full items-center justify-center"
+          aria-label="Contact links"
+        >
+          <Link
+            href="https://github.com/ellisjas"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            className="hover:opacity-80 transition-opacity ease-in-out delay-100"
+          >
+            <Image
+              src="/icons/github.svg"
+              alt="GitHub"
+              width={28}
+              height={28}
+            />
+          </Link>
+          <Link
+            href="mailto:jasellis@pm.me"
+            aria-label="Email me"
+            className="hover:opacity-80 transition-opacity ease-in-out delay-100"
+          >
+            <Image src="/icons/email.svg" alt="Email" width={28} height={28} />
+          </Link>
+        </nav>
       </section>
       <Image
         src="/images/self.jpg"
