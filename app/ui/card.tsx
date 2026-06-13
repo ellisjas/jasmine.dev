@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export function Card() {
   return (
-    <section className="flex items-center gap-4 bg-linear-to-bl from-violet-500 to-fuchsia-500 py-6 px-8 rounded-2xl shadow-2xl">
+    <section className="flex items-center text-white gap-4 bg-linear-to-bl from-violet-500 to-fuchsia-500 py-6 px-8 rounded-2xl shadow-2xl">
       <section className="flex-1">
-        <hgroup className="text-center">
+        <hgroup className="text-center mb-1">
           <h1 className="text-ibm-sans">Jasmine Ellis</h1>
           <h2>Web Developer</h2>
         </hgroup>
@@ -50,7 +50,7 @@ export function Card() {
         width={329}
         height={331}
         priority
-        className="rounded-full w-[30%] h-auto object-cover grayscale shrink-0"
+        className="rounded-full w-[30%] h-auto object-cover grayscale shrink-0 hidden md:block"
       />
     </section>
   );
